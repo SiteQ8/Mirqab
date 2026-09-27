@@ -3,7 +3,7 @@ import {
 } from './core.js';
 
 const SVGNS = 'http://www.w3.org/2000/svg';
-const LS = { lang: 'mirqab:lang', theme: 'mirqab:theme', def: 'mirqab:defenses', ack: 'mirqab:ack' };
+const LS = { lang: 'mirqab:lang', theme: 'mirqab:theme', def: 'mirqab:defenses' };
 
 const S = {
   b: null,
@@ -721,7 +721,6 @@ function dismissDisclaimer() {
   disclaimerEl.remove();
   disclaimerEl = null;
   document.removeEventListener('keydown', onDisclaimerKey);
-  lsSet(LS.ack, '1');
 }
 function showDisclaimer() {
   if (disclaimerEl) disclaimerEl.remove();
@@ -772,7 +771,7 @@ async function boot() {
 
   applyChrome();
   render();
-  if (lsGet(LS.ack) !== '1') showDisclaimer();
+  showDisclaimer();
 }
 
 boot();
