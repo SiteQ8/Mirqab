@@ -466,5 +466,21 @@
   "mini.release": {
     "en": "a release is possible",
     "ar": "التسرب ممكن"
+  },
+  "popup.title": {
+    "en": "For learning only",
+    "ar": "لأغراض التعليم فقط"
+  },
+  "popup.body1": {
+    "en": "Mirqab is an educational cyber range. The plant is fictional and composite, and it has no relation to any real facility or company.",
+    "ar": "مرقاب ميدان سيبراني تعليمي والمصنع فيه افتراضي مركب لا علاقة له بأي منشأة حقيقية أو جهة حقيقية."
+  },
+  "popup.body2": {
+    "en": "Use it to learn defensive engineering, not to operate or interfere with any live system.",
+    "ar": "استخدمه لتعلم هندسة الدفاع لا لتشغيل أي نظام فعلي أو العبث به."
+  },
+  "popup.ack": {
+    "en": "I understand",
+    "ar": "فهمت"
   }
 }

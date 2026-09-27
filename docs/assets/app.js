@@ -3,7 +3,7 @@ import {
 } from './core.js';
 
 const SVGNS = 'http://www.w3.org/2000/svg';
-const LS = { lang: 'mirqab:lang', theme: 'mirqab:theme', def: 'mirqab:defenses' };
+const LS = { lang: 'mirqab:lang', theme: 'mirqab:theme', def: 'mirqab:defenses', ack: 'mirqab:ack' };
 
 const S = {
   b: null,
@@ -706,6 +706,40 @@ function iconPlay() { const s = svg('svg', { viewBox: '0 0 24 24', fill: 'curren
 // ---------- persistence ----------
 function saveDefenses() { lsSet(LS.def, JSON.stringify([...S.enabled])); }
 
+// ---------- first visit disclaimer ----------
+let disclaimerEl = null;
+function markSvg() {
+  return svg('svg', { class: 'modal-mark', viewBox: '0 0 48 48', fill: 'none', 'aria-hidden': 'true' }, [
+    svg('path', { d: 'M10 44V21l3-2.2 3 2.2v-4.5l3-2.2 3 2.2V11l3-2.2 3 2.2v5l3-2.2 3 2.2V21l3 2.2V44', stroke: 'currentColor', 'stroke-width': '1.8', 'stroke-linejoin': 'round' }),
+    svg('circle', { cx: '24', cy: '30', r: '3.4', stroke: 'currentColor', 'stroke-width': '1.8' }),
+    svg('path', { d: 'M24 24.4v-3M24 39v-3M18.6 30h-3M32.4 30h-3', stroke: 'currentColor', 'stroke-width': '1.6', 'stroke-linecap': 'round' }),
+  ]);
+}
+function onDisclaimerKey(e) { if (e.key === 'Escape') dismissDisclaimer(); }
+function dismissDisclaimer() {
+  if (!disclaimerEl) return;
+  disclaimerEl.remove();
+  disclaimerEl = null;
+  document.removeEventListener('keydown', onDisclaimerKey);
+  lsSet(LS.ack, '1');
+}
+function showDisclaimer() {
+  if (disclaimerEl) disclaimerEl.remove();
+  const dialog = el('div', { class: 'modal', role: 'dialog', 'aria-modal': 'true', 'aria-labelledby': 'disc-title', 'aria-describedby': 'disc-body' }, [
+    el('div', { class: 'modal-crest', 'aria-hidden': 'true' }),
+    el('div', { class: 'modal-inner' }, [
+      el('div', { class: 'modal-head' }, [markSvg(), el('h2', { class: 'modal-title', id: 'disc-title', text: t('popup.title') })]),
+      el('div', { class: 'modal-body', id: 'disc-body' }, [el('p', { text: t('popup.body1') }), el('p', { text: t('popup.body2') })]),
+      el('div', { class: 'modal-actions' }, [el('button', { class: 'btn btn-primary', type: 'button', id: 'disc-ack', onclick: dismissDisclaimer, text: t('popup.ack') })]),
+    ]),
+  ]);
+  disclaimerEl = el('div', { class: 'modal-overlay', onclick: (e) => { if (e.target === disclaimerEl) dismissDisclaimer(); } }, [dialog]);
+  document.body.append(disclaimerEl);
+  document.addEventListener('keydown', onDisclaimerKey);
+  const btn = document.getElementById('disc-ack');
+  if (btn) btn.focus();
+}
+
 // ---------- boot ----------
 async function boot() {
   try {
@@ -730,6 +764,7 @@ async function boot() {
 
   document.getElementById('lang-toggle').addEventListener('click', () => {
     S.lang = S.lang === 'ar' ? 'en' : 'ar'; lsSet(LS.lang, S.lang); applyChrome(); render();
+    if (disclaimerEl) showDisclaimer();
   });
   document.getElementById('theme-toggle').addEventListener('click', () => {
     S.theme = S.theme === 'dark' ? 'light' : 'dark'; lsSet(LS.theme, S.theme); applyChrome();
@@ -737,6 +772,7 @@ async function boot() {
 
   applyChrome();
   render();
+  if (lsGet(LS.ack) !== '1') showDisclaimer();
 }
 
 boot();

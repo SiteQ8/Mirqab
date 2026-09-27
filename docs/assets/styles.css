@@ -463,3 +463,26 @@ html[data-theme="light"] .about-block h3 { color: var(--brand); }
   .panel[hidden] { display: block !important; }
   .card, .step, .control, .outcome, .phase { break-inside: avoid; }
 }
+
+/* First visit disclaimer */
+.modal-overlay {
+  position: fixed; inset: 0; z-index: 60; display: grid; place-items: center; padding: 1.4rem;
+  background: color-mix(in srgb, #000 62%, transparent); backdrop-filter: blur(3px);
+  animation: fade 0.25s ease;
+}
+.modal {
+  width: min(100%, 34rem); background: var(--surface); color: var(--ink);
+  border: 1px solid var(--line-strong); border-radius: var(--radius); box-shadow: var(--shadow);
+  position: relative; overflow: hidden; animation: rise 0.3s ease;
+}
+@keyframes rise { from { opacity: 0; transform: translateY(10px) scale(0.98); } to { opacity: 1; transform: none; } }
+.modal-crest { height: 8px; background: repeating-linear-gradient(90deg, var(--brand) 0 14px, transparent 14px 28px); }
+.modal-crest::after { content: ""; display: block; height: 2px; background: var(--gold); opacity: 0.7; margin-top: 6px; }
+.modal-inner { padding: 1.3rem 1.4rem 1.4rem; }
+.modal-head { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 0.7rem; }
+.modal-mark { width: 34px; height: 34px; color: var(--gold); flex: none; }
+.modal-title { margin: 0; font-size: 1.2rem; color: var(--ink); }
+.modal-body p { margin: 0 0 0.7rem; color: var(--muted); }
+.modal-body p:last-of-type { margin-bottom: 0; }
+.modal-actions { margin-top: 1.2rem; display: flex; justify-content: flex-end; }
+.modal-actions .btn-primary { padding: 0.6rem 1.4rem; }
