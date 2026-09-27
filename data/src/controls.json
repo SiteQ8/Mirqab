@@ -1,0 +1,110 @@
+{
+  "budget": 70,
+  "controls": [
+    {
+      "id": "email_filter", "level": "L4", "fr": "FR1", "cost": 6,
+      "en": "Email filtering and phishing defense",
+      "ar": "ترشيح البريد والدفاع ضد التصيّد",
+      "desc": { "en": "Filters malicious mail and links before they reach staff who touch plant systems.", "ar": "يرشّح البريد والروابط الخبيثة قبل أن تصل إلى من يتعامل مع أنظمة المصنع." },
+      "blocks": ["s2_phish", "s4_phish"], "detects": []
+    },
+    {
+      "id": "mfa_remote", "level": "L35", "fr": "FR1", "cost": 10,
+      "en": "Multifactor remote access through a jump host",
+      "ar": "وصول عن بُعد متعدد العوامل عبر مضيف وسيط",
+      "desc": { "en": "Requires a second factor and a controlled jump host for every remote session into the plant.", "ar": "يشترط عاملًا ثانيًا ومضيفًا وسيطًا مضبوطًا لكل جلسة وصول عن بُعد إلى المصنع." },
+      "blocks": ["s1_access"], "detects": []
+    },
+    {
+      "id": "idmz", "level": "L35", "fr": "FR5", "cost": 12,
+      "en": "Enforced industrial demilitarized zone",
+      "ar": "منطقة صناعية منزوعة السلاح مُلزمة",
+      "desc": { "en": "Stops all enterprise traffic at a broker so nothing reaches the plant network directly.", "ar": "يوقف كل حركة المؤسسة عند وسيط حتى لا يصل شيء إلى شبكة المصنع مباشرة." },
+      "blocks": ["s1_pivot"], "detects": ["s4_spread"]
+    },
+    {
+      "id": "segmentation", "level": "L2", "fr": "FR5", "cost": 10,
+      "en": "Network segmentation between levels",
+      "ar": "تقسيم الشبكة بين المستويات",
+      "desc": { "en": "Separates the control levels so a foothold in one does not open the rest.", "ar": "يفصل مستويات التحكم حتى لا يفتح موطئ قدم في أحدها بقية المستويات." },
+      "blocks": ["s1_pivot", "s4_spread"], "detects": []
+    },
+    {
+      "id": "least_priv", "level": "L2", "fr": "FR2", "cost": 8,
+      "en": "Least privilege on control accounts",
+      "ar": "أقل امتياز لحسابات التحكم",
+      "desc": { "en": "Limits each account to what it needs so a stolen login cannot command the process.", "ar": "يقصر كل حساب على ما يحتاجه حتى لا يستطيع دخول مسروق أن يأمر العملية." },
+      "blocks": ["s1_hmi"], "detects": []
+    },
+    {
+      "id": "allowlist_ews", "level": "L3", "fr": "FR3", "cost": 10,
+      "en": "Application allowlisting on the historian and engineering workstation",
+      "ar": "قائمة السماح للتطبيقات على المؤرّخ ومحطة العمل الهندسية",
+      "desc": { "en": "Lets only approved software run on the servers attackers use as a bridge into the plant.", "ar": "يسمح بتشغيل البرامج المعتمدة فقط على الخوادم التي يتخذها المهاجمون جسرًا إلى المصنع." },
+      "blocks": ["s2_ews", "s3_historian"], "detects": []
+    },
+    {
+      "id": "patch_ews", "level": "L3", "fr": "FR3", "cost": 7,
+      "en": "Patching and hardening of operations hosts",
+      "ar": "تحديث وتحصين خوادم العمليات",
+      "desc": { "en": "Closes the known weaknesses that let malware take and hold the operations servers.", "ar": "يغلق الثغرات المعروفة التي تتيح للبرمجيات الخبيثة السيطرة على خوادم العمليات والبقاء فيها." },
+      "blocks": ["s4_spread"], "detects": []
+    },
+    {
+      "id": "edr_l3", "level": "L3", "fr": "FR3", "cost": 9,
+      "en": "Endpoint detection on operations hosts",
+      "ar": "كشف الطرفيات على خوادم العمليات",
+      "desc": { "en": "Watches the operations hosts for the behavior of malware and stops it early.", "ar": "يراقب خوادم العمليات بحثًا عن سلوك البرمجيات الخبيثة ويوقفها مبكرًا." },
+      "blocks": ["s2_ews"], "detects": ["s3_historian", "s4_encrypt"]
+    },
+    {
+      "id": "sis_zone", "level": "L1", "fr": "FR5", "cost": 12,
+      "en": "Safety system in its own isolated zone",
+      "ar": "نظام السلامة في منطقة معزولة خاصة به",
+      "desc": { "en": "Keeps the safety system on a separate zone that the control network cannot reach.", "ar": "يبقي نظام السلامة على منطقة منفصلة لا تصل إليها شبكة التحكم." },
+      "blocks": ["s2_reach_sis"], "detects": []
+    },
+    {
+      "id": "sis_keyswitch", "level": "L1", "fr": "FR2", "cost": 6,
+      "en": "Safety controller key switch left in run",
+      "ar": "مفتاح متحكم السلامة مثبّت على وضع التشغيل",
+      "desc": { "en": "A physical key that must be turned before the safety logic can be changed, kept in run.", "ar": "مفتاح مادي يجب إدارته قبل تغيير منطق السلامة ويبقى على وضع التشغيل." },
+      "blocks": ["s2_reprogram"], "detects": []
+    },
+    {
+      "id": "hmi_integrity", "level": "L2", "fr": "FR3", "cost": 9,
+      "en": "Reading integrity and sensor cross check",
+      "ar": "سلامة القراءات والمطابقة بين المجسات",
+      "desc": { "en": "Cross checks readings against independent sensors so a faked board value is caught.", "ar": "يطابق القراءات مع مجسات مستقلة حتى تُكشف أي قيمة مزيفة على الشاشة." },
+      "blocks": ["s3_mitm", "s3_drift"], "detects": []
+    },
+    {
+      "id": "net_monitor", "level": "L2", "fr": "FR6", "cost": 10,
+      "en": "Operational technology network monitoring",
+      "ar": "مراقبة شبكة التقنيات التشغيلية",
+      "desc": { "en": "Learns the normal plant traffic and raises an alert when a command or flow is out of place.", "ar": "يتعلم حركة المصنع الطبيعية ويطلق تنبيهًا عندما يخرج أمر أو تدفق عن مكانه." },
+      "blocks": [], "detects": ["s1_manip", "s2_reprogram", "s3_mitm", "s4_encrypt"]
+    },
+    {
+      "id": "ids_ot", "level": "L3", "fr": "FR6", "cost": 9,
+      "en": "Intrusion detection with industrial signatures",
+      "ar": "كشف الاختراق بتواقيع صناعية",
+      "desc": { "en": "Matches traffic against known industrial attack patterns so a reach for the controllers is seen.", "ar": "يطابق الحركة مع أنماط الهجوم الصناعية المعروفة حتى يُرى أي وصول إلى أجهزة التحكم." },
+      "blocks": [], "detects": ["s1_manip", "s2_reach_sis"]
+    },
+    {
+      "id": "backups", "level": "L3", "fr": "FR7", "cost": 8,
+      "en": "Offline and tested backups",
+      "ar": "نسخ احتياطية غير متصلة ومختبرة",
+      "desc": { "en": "Keeps clean copies apart from the network so operations can be restored after encryption.", "ar": "يحفظ نسخًا نظيفة بعيدًا عن الشبكة حتى تُستعاد العمليات بعد التشفير." },
+      "blocks": [], "detects": ["s4_encrypt"]
+    },
+    {
+      "id": "logging_soc", "level": "L3", "fr": "FR6", "cost": 7,
+      "en": "Central logging to the security operations centre",
+      "ar": "تسجيل مركزي إلى مركز عمليات الأمن",
+      "desc": { "en": "Sends logs to the security operations centre so early moves are visible and can be reported.", "ar": "يرسل السجلات إلى مركز عمليات الأمن حتى تُرى التحركات المبكرة ويمكن الإبلاغ عنها." },
+      "blocks": [], "detects": ["s1_access", "s4_encrypt"]
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "units": [
+    {
+      "id": "inlet",
+      "order": 1,
+      "level": "L1",
+      "en": "Gas receiving",
+      "ar": "استقبال الغاز",
+      "desc": {
+        "en": "Feed gas arrives from the field, is metered and its pressure is set before treatment begins.",
+        "ar": "يصل الغاز من الحقل فيُقاس ويُضبط ضغطه قبل أن تبدأ المعالجة."
+      },
+      "vars": [
+        {
+          "key": "inlet_pressure",
+          "en": "Inlet pressure",
+          "ar": "ضغط الدخول",
+          "unit": "bar",
+          "normal": 68,
+          "min": 55,
+          "warn": 80,
+          "trip": 88,
+          "limit": 96
+        },
+        {
+          "key": "feed_flow",
+          "en": "Feed flow",
+          "ar": "تدفق التغذية",
+          "unit": "MMSCFD",
+          "normal": 1200,
+          "min": 850,
+          "warn": 1420,
+          "trip": 1520,
+          "limit": 1650
+        }
+      ],
+      "short": {
+        "en": "Receiving",
+        "ar": "الاستقبال"
+      },
+      "display": "inlet_pressure"
+    },
+    {
+      "id": "agr",
+      "order": 2,
+      "level": "L1",
+      "en": "Acid gas removal",
+      "ar": "إزالة الغازات الحمضية",
+      "desc": {
+        "en": "An amine system strips carbon dioxide and hydrogen sulphide so the gas will not freeze or corrode downstream.",
+        "ar": "يزيل نظام الأمين ثاني أكسيد الكربون وكبريتيد الهيدروجين حتى لا يتجمد الغاز أو يسبب التآكل في المراحل التالية."
+      },
+      "vars": [
+        {
+          "key": "co2_ppm",
+          "en": "Residual carbon dioxide",
+          "ar": "ثاني أكسيد الكربون المتبقي",
+          "unit": "ppm",
+          "normal": 45,
+          "min": 0,
+          "warn": 90,
+          "trip": 130,
+          "limit": 180
+        },
+        {
+          "key": "amine_temp",
+          "en": "Amine temperature",
+          "ar": "حرارة الأمين",
+          "unit": "C",
+          "normal": 42,
+          "min": 30,
+          "warn": 55,
+          "trip": 65,
+          "limit": 75
+        }
+      ],
+      "short": {
+        "en": "Acid gas",
+        "ar": "الأحماض"
+      },
+      "display": "co2_ppm"
+    },
+    {
+      "id": "dehy",
+      "order": 3,
+      "level": "L1",
+      "en": "Dehydration",
+      "ar": "التجفيف",
+      "desc": {
+        "en": "Molecular sieve beds remove the last of the water so ice will not form in the cold section.",
+        "ar": "تزيل مصافي الغربال الجزيئي ما تبقى من الماء حتى لا يتكون الجليد في القسم البارد."
+      },
+      "vars": [
+        {
+          "key": "moisture_ppm",
+          "en": "Residual moisture",
+          "ar": "الرطوبة المتبقية",
+          "unit": "ppm",
+          "normal": 1,
+          "min": 0,
+          "warn": 3,
+          "trip": 5,
+          "limit": 8
+        }
+      ],
+      "short": {
+        "en": "Dehydration",
+        "ar": "التجفيف"
+      },
+      "display": "moisture_ppm"
+    },
+    {
+      "id": "liq",
+      "order": 4,
+      "level": "L1",
+      "critical": true,
+      "en": "Liquefaction",
+      "ar": "الإسالة",
+      "desc": {
+        "en": "The main cryogenic heat exchanger cools the gas until it turns to liquid, and its refrigerant pressure is the most sensitive point in the plant.",
+        "ar": "يبرّد المبادل الحراري القِري الرئيسي الغاز حتى يتحول إلى سائل ويُعد ضغط مبرّده أكثر النقاط حساسية في المصنع."
+      },
+      "vars": [
+        {
+          "key": "mr_pressure",
+          "en": "Refrigerant pressure",
+          "ar": "ضغط المبرّد",
+          "unit": "bar",
+          "normal": 45,
+          "min": 30,
+          "warn": 55,
+          "trip": 62,
+          "limit": 70
+        },
+        {
+          "key": "cold_box_temp",
+          "en": "Cold box temperature",
+          "ar": "حرارة الصندوق البارد",
+          "unit": "C",
+          "normal": -161,
+          "min": -170,
+          "warn": -150,
+          "trip": -140,
+          "limit": -132
+        }
+      ],
+      "short": {
+        "en": "Liquefaction",
+        "ar": "الإسالة"
+      },
+      "display": "mr_pressure"
+    },
+    {
+      "id": "storage",
+      "order": 5,
+      "level": "L1",
+      "critical": true,
+      "en": "Storage",
+      "ar": "التخزين",
+      "desc": {
+        "en": "Full containment tanks hold the liquid, and boil off gas is drawn back so the tank pressure stays within a safe band.",
+        "ar": "تحفظ خزانات الاحتواء الكامل السائل ويُسحب الغاز المتبخر منها حتى يبقى ضغط الخزان ضمن نطاق آمن."
+      },
+      "vars": [
+        {
+          "key": "tank_level",
+          "en": "Tank level",
+          "ar": "منسوب الخزان",
+          "unit": "%",
+          "normal": 62,
+          "min": 15,
+          "warn": 88,
+          "trip": 93,
+          "limit": 98
+        },
+        {
+          "key": "tank_pressure",
+          "en": "Tank pressure",
+          "ar": "ضغط الخزان",
+          "unit": "mbar",
+          "normal": 140,
+          "min": 60,
+          "warn": 200,
+          "trip": 250,
+          "limit": 290
+        }
+      ],
+      "short": {
+        "en": "Storage",
+        "ar": "التخزين"
+      },
+      "display": "tank_pressure"
+    },
+    {
+      "id": "loading",
+      "order": 6,
+      "level": "L1",
+      "en": "Loading",
+      "ar": "التحميل",
+      "desc": {
+        "en": "Loading arms transfer the liquid to carriers at the jetty under a controlled rate.",
+        "ar": "تنقل أذرع التحميل السائل إلى الناقلات عند الرصيف بمعدل مضبوط."
+      },
+      "vars": [
+        {
+          "key": "loading_rate",
+          "en": "Loading rate",
+          "ar": "معدل التحميل",
+          "unit": "m3/h",
+          "normal": 11000,
+          "min": 0,
+          "warn": 13500,
+          "trip": 14500,
+          "limit": 15500
+        }
+      ],
+      "short": {
+        "en": "Loading",
+        "ar": "التحميل"
+      },
+      "display": "loading_rate"
+    }
+  ],
+  "sis": {
+    "en": "Safety instrumented system",
+    "ar": "نظام السلامة المزود بالأجهزة",
+    "abbr": "SIS",
+    "esd_en": "Emergency shutdown",
+    "esd_ar": "الإيقاف الطارئ",
+    "guards": [
+      "mr_pressure",
+      "tank_pressure"
+    ],
+    "desc": {
+      "en": "The safety system watches the refrigerant pressure and the tank pressure, and on a high reading it trips an emergency shutdown that closes valves and routes gas to the flare so pressure falls safely.",
+      "ar": "يراقب نظام السلامة ضغط المبرّد وضغط الخزان وعند ارتفاع القراءة يشغّل إيقافًا طارئًا يغلق الصمامات ويوجه الغاز إلى الشعلة حتى يهبط الضغط بأمان."
+    }
+  }
+}

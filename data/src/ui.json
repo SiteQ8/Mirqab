@@ -1,0 +1,470 @@
+{
+  "tagline": {
+    "en": "An LNG plant cyber range for Qatar",
+    "ar": "ميدان سيبراني لمصنع الغاز الطبيعي المسال في قطر"
+  },
+  "mast.source": {
+    "en": "A training range for defending industrial control systems, grounded in NCSA, IEC 62443 and MITRE ATT&CK for ICS",
+    "ar": "ميدان تدريب للدفاع عن أنظمة التحكم الصناعية مبني على الوكالة الوطنية للأمن السيبراني ومعيار IEC 62443 وإطار MITRE ATT&CK"
+  },
+  "skip": {
+    "en": "Skip to content",
+    "ar": "انتقل إلى المحتوى"
+  },
+  "tabs.label": {
+    "en": "Sections",
+    "ar": "الأقسام"
+  },
+  "tab.range": {
+    "en": "The range",
+    "ar": "الميدان"
+  },
+  "tab.defenses": {
+    "en": "Defenses",
+    "ar": "الدفاعات"
+  },
+  "tab.architecture": {
+    "en": "Architecture",
+    "ar": "المعمارية"
+  },
+  "tab.glossary": {
+    "en": "Glossary",
+    "ar": "المسرد"
+  },
+  "tab.about": {
+    "en": "About",
+    "ar": "عن الأداة"
+  },
+  "lang.switch": {
+    "en": "العربية",
+    "ar": "English"
+  },
+  "lang.switchLabel": {
+    "en": "Switch to Arabic",
+    "ar": "التبديل إلى الإنجليزية"
+  },
+  "common.of": {
+    "en": "of",
+    "ar": "من"
+  },
+  "mini.posture": {
+    "en": "Posture",
+    "ar": "الجاهزية"
+  },
+  "mini.safe": {
+    "en": "{n} of {total} attacks stopped",
+    "ar": "{n} من {total} هجمات موقوفة"
+  },
+  "mini.setDefenses": {
+    "en": "Set your defenses to begin",
+    "ar": "حدد دفاعاتك للبدء"
+  },
+  "range.title": {
+    "en": "The plant",
+    "ar": "المصنع"
+  },
+  "range.intro": {
+    "en": "Watch the process live, launch an attack and see whether your defenses and the safety system hold.",
+    "ar": "راقب العملية حية وأطلق هجومًا وشاهد هل تصمد دفاعاتك ونظام السلامة."
+  },
+  "range.pick": {
+    "en": "Choose a scenario",
+    "ar": "اختر سيناريو"
+  },
+  "range.launch": {
+    "en": "Launch attack",
+    "ar": "أطلق الهجوم"
+  },
+  "range.stop": {
+    "en": "Stop",
+    "ar": "أوقف"
+  },
+  "range.reset": {
+    "en": "Reset the plant",
+    "ar": "أعد ضبط المصنع"
+  },
+  "range.running": {
+    "en": "Attack in progress",
+    "ar": "الهجوم جارٍ"
+  },
+  "range.idle": {
+    "en": "Plant steady",
+    "ar": "المصنع مستقر"
+  },
+  "range.flare": {
+    "en": "Flare",
+    "ar": "الشعلة"
+  },
+  "range.tickLabel": {
+    "en": "Elapsed",
+    "ar": "المنقضي"
+  },
+  "range.defensesHint": {
+    "en": "You have not set any defenses, so open the Defenses tab first.",
+    "ar": "لم تحدد أي دفاعات لذا افتح تبويب الدفاعات أولًا."
+  },
+  "range.activeControls": {
+    "en": "Defenses in place",
+    "ar": "الدفاعات القائمة"
+  },
+  "range.none": {
+    "en": "none",
+    "ar": "لا شيء"
+  },
+  "sis.title": {
+    "en": "Safety system",
+    "ar": "نظام السلامة"
+  },
+  "sis.armed": {
+    "en": "Armed",
+    "ar": "مسلّح"
+  },
+  "sis.disabled": {
+    "en": "Disabled",
+    "ar": "معطّل"
+  },
+  "sis.tripped": {
+    "en": "Tripped",
+    "ar": "مُفعَّل"
+  },
+  "sis.guarding": {
+    "en": "Guards the refrigerant and tank pressure",
+    "ar": "يحمي ضغط المبرّد وضغط الخزان"
+  },
+  "status.normal": {
+    "en": "Normal",
+    "ar": "طبيعي"
+  },
+  "status.warning": {
+    "en": "Warning",
+    "ar": "تحذير"
+  },
+  "status.trip": {
+    "en": "Safe shutdown",
+    "ar": "إيقاف آمن"
+  },
+  "status.release": {
+    "en": "Loss of containment",
+    "ar": "فقدان الاحتواء"
+  },
+  "status.disruption": {
+    "en": "Operations blind",
+    "ar": "العمليات معماة"
+  },
+  "status.normalMsg": {
+    "en": "The plant is running within its safe limits.",
+    "ar": "يعمل المصنع ضمن حدوده الآمنة."
+  },
+  "status.warningMsg": {
+    "en": "A reading is leaving its safe band so the operator should act.",
+    "ar": "تخرج إحدى القراءات عن نطاقها الآمن لذا ينبغي للمشغّل أن يتصرف."
+  },
+  "status.tripMsg": {
+    "en": "The safety system tripped and brought the unit to a safe state, so there was no release.",
+    "ar": "شغّل نظام السلامة الإيقاف ونقل الوحدة إلى حالة آمنة فلم يحدث تسرب."
+  },
+  "status.releaseMsg": {
+    "en": "The safety system was disabled and the pressure passed its limit, so containment was lost.",
+    "ar": "عُطّل نظام السلامة وتجاوز الضغط حده فضاع الاحتواء."
+  },
+  "status.disruptionMsg": {
+    "en": "Operations lost its wider view, yet local control kept the process safe.",
+    "ar": "فقدت العمليات رؤيتها الأوسع ومع ذلك أبقى التحكم المحلي العملية آمنة."
+  },
+  "kill.title": {
+    "en": "Attack path",
+    "ar": "مسار الهجوم"
+  },
+  "kill.blocked": {
+    "en": "Blocked",
+    "ar": "محجوب"
+  },
+  "kill.detected": {
+    "en": "Detected",
+    "ar": "مكشوف"
+  },
+  "kill.open": {
+    "en": "Succeeded",
+    "ar": "نجح"
+  },
+  "kill.pending": {
+    "en": "Not reached",
+    "ar": "لم يُبلغ"
+  },
+  "kill.blockedBy": {
+    "en": "Blocked by",
+    "ar": "حجبه"
+  },
+  "kill.detectedBy": {
+    "en": "Detected by",
+    "ar": "كشفه"
+  },
+  "kill.technique": {
+    "en": "Technique",
+    "ar": "الأسلوب"
+  },
+  "kill.inspiration": {
+    "en": "Inspired by",
+    "ar": "مستوحى من"
+  },
+  "outcome.title": {
+    "en": "Outcome",
+    "ar": "النتيجة"
+  },
+  "outcome.contained": {
+    "en": "Attack contained",
+    "ar": "احتُوي الهجوم"
+  },
+  "outcome.safeTrip": {
+    "en": "Safe shutdown",
+    "ar": "إيقاف آمن"
+  },
+  "outcome.release": {
+    "en": "Loss of containment",
+    "ar": "فقدان الاحتواء"
+  },
+  "outcome.disruption": {
+    "en": "Operations disrupted",
+    "ar": "اضطراب في العمليات"
+  },
+  "outcome.containedMsg": {
+    "en": "Your defenses stopped the attack before it reached the process.",
+    "ar": "أوقفت دفاعاتك الهجوم قبل أن يبلغ العملية."
+  },
+  "outcome.safeTripMsg": {
+    "en": "The attack reached the process, yet the safety system tripped and prevented a release.",
+    "ar": "بلغ الهجوم العملية ومع ذلك شغّل نظام السلامة الإيقاف ومنع التسرب."
+  },
+  "outcome.releaseMsg": {
+    "en": "The attack disabled the safety system and drove the pressure past its limit.",
+    "ar": "عطّل الهجوم نظام السلامة ودفع الضغط فوق حده."
+  },
+  "outcome.disruptionMsg": {
+    "en": "The attack blinded operations, and clean backups are what bring it back.",
+    "ar": "أعمى الهجوم العمليات والنسخ الاحتياطية النظيفة هي ما يعيدها."
+  },
+  "outcome.detected": {
+    "en": "Your monitoring detected the intrusion along the way.",
+    "ar": "كشفت مراقبتك التسلل في أثناء الطريق."
+  },
+  "outcome.undetected": {
+    "en": "Nothing you deployed detected the intrusion.",
+    "ar": "لم يكشف أي مما نشرته التسلل."
+  },
+  "outcome.lesson": {
+    "en": "Lesson",
+    "ar": "الدرس"
+  },
+  "outcome.harden": {
+    "en": "Add the missing control",
+    "ar": "أضف الضابط الناقص"
+  },
+  "playbook.title": {
+    "en": "Incident response",
+    "ar": "الاستجابة للحادث"
+  },
+  "playbook.note": {
+    "en": "The phases follow the NCSA National Incident Management Framework.",
+    "ar": "تتبع المراحل الإطار الوطني لإدارة الحوادث الصادر عن الوكالة الوطنية للأمن السيبراني."
+  },
+  "def.title": {
+    "en": "Your defenses",
+    "ar": "دفاعاتك"
+  },
+  "def.intro": {
+    "en": "Spend a limited budget on the controls that block the attack paths, then take them into the range.",
+    "ar": "أنفق ميزانية محدودة على الضوابط التي تحجب مسارات الهجوم ثم خذها إلى الميدان."
+  },
+  "def.budget": {
+    "en": "Budget",
+    "ar": "الميزانية"
+  },
+  "def.spent": {
+    "en": "Spent",
+    "ar": "المنفق"
+  },
+  "def.remaining": {
+    "en": "Remaining",
+    "ar": "المتبقي"
+  },
+  "def.over": {
+    "en": "Over budget by {n}",
+    "ar": "تجاوزت الميزانية بمقدار {n}"
+  },
+  "def.points": {
+    "en": "points",
+    "ar": "نقطة"
+  },
+  "def.cost": {
+    "en": "Cost",
+    "ar": "التكلفة"
+  },
+  "def.enable": {
+    "en": "Enable this control",
+    "ar": "فعّل هذا الضابط"
+  },
+  "def.blocks": {
+    "en": "Blocks",
+    "ar": "يحجب"
+  },
+  "def.detects": {
+    "en": "Detects",
+    "ar": "يكشف"
+  },
+  "def.coverageFR": {
+    "en": "Coverage by foundational requirement",
+    "ar": "التغطية حسب المتطلب الأساسي"
+  },
+  "def.coverageZone": {
+    "en": "Coverage by level",
+    "ar": "التغطية حسب المستوى"
+  },
+  "def.clear": {
+    "en": "Clear all",
+    "ar": "امسح الكل"
+  },
+  "def.selectAll": {
+    "en": "Select all",
+    "ar": "اختر الكل"
+  },
+  "def.summary": {
+    "en": "With these defenses, {n} of {total} attacks are stopped before they reach the process.",
+    "ar": "بهذه الدفاعات تُوقف {n} من {total} هجمات قبل أن تبلغ العملية."
+  },
+  "def.saved": {
+    "en": "Saved in this browser",
+    "ar": "محفوظ في هذا المتصفح"
+  },
+  "def.storageOff": {
+    "en": "Browser storage is off, so your choices are not saved.",
+    "ar": "تخزين المتصفح معطّل لذا لا تُحفظ اختياراتك."
+  },
+  "def.scenariosBlocked": {
+    "en": "Scenarios this control affects",
+    "ar": "السيناريوهات التي يؤثر فيها هذا الضابط"
+  },
+  "arch.title": {
+    "en": "Plant architecture",
+    "ar": "معمارية المصنع"
+  },
+  "arch.intro": {
+    "en": "The plant network is drawn in levels, and every defense belongs to one of them.",
+    "ar": "تُرسم شبكة المصنع في مستويات وينتمي كل دفاع إلى واحد منها."
+  },
+  "arch.purdue": {
+    "en": "Levels of the plant network",
+    "ar": "مستويات شبكة المصنع"
+  },
+  "arch.fr": {
+    "en": "The seven foundational requirements of IEC 62443",
+    "ar": "المتطلبات الأساسية السبعة لمعيار IEC 62443"
+  },
+  "arch.assets": {
+    "en": "Assets",
+    "ar": "الأصول"
+  },
+  "arch.controlsHere": {
+    "en": "Defenses at this level",
+    "ar": "الدفاعات في هذا المستوى"
+  },
+  "glo.title": {
+    "en": "Glossary",
+    "ar": "المسرد"
+  },
+  "glo.intro": {
+    "en": "The operational technology and control system terms used across the range.",
+    "ar": "مصطلحات التقنيات التشغيلية وأنظمة التحكم المستخدمة في الميدان."
+  },
+  "glo.search": {
+    "en": "Search terms",
+    "ar": "ابحث في المصطلحات"
+  },
+  "glo.count": {
+    "en": "{n} terms",
+    "ar": "{n} مصطلحًا"
+  },
+  "glo.ref": {
+    "en": "Reference",
+    "ar": "المرجع"
+  },
+  "empty.search": {
+    "en": "Nothing matches your search.",
+    "ar": "لا شيء يطابق بحثك."
+  },
+  "about.title": {
+    "en": "About Mirqab",
+    "ar": "عن مرقاب"
+  },
+  "about.what": {
+    "en": "Mirqab is an open cyber range for a fictional LNG plant, built so defenders in Qatar can practise protecting industrial control systems.",
+    "ar": "مرقاب ميدان سيبراني مفتوح لمصنع افتراضي للغاز المسال بُني حتى يتدرب المدافعون في قطر على حماية أنظمة التحكم الصناعية."
+  },
+  "about.how": {
+    "en": "You set your defenses within a budget, launch one of the attack paths and watch the process react in real time as the safety system decides the ending.",
+    "ar": "تحدد دفاعاتك ضمن ميزانية وتطلق أحد مسارات الهجوم وتشاهد العملية تتفاعل لحظيًا بينما يقرر نظام السلامة النهاية."
+  },
+  "about.source": {
+    "en": "The controls follow NIST SP 800-82, the zones and requirements follow IEC 62443, the attack steps follow MITRE ATT&CK for ICS, and the incident playbooks follow the NCSA National Incident Management Framework.",
+    "ar": "تتبع الضوابط دليل NIST SP 800-82 وتتبع المناطق والمتطلبات معيار IEC 62443 وتتبع خطوات الهجوم إطار MITRE ATT&CK وتتبع أدلة الحوادث الإطار الوطني لإدارة الحوادث."
+  },
+  "about.disclaimer": {
+    "en": "The plant is fictional and composite, it represents no real facility, and the attack paths carry no operational detail that could aid an attacker.",
+    "ar": "المصنع افتراضي مركب ولا يمثل أي منشأة حقيقية ولا تحمل مسارات الهجوم أي تفصيل تشغيلي قد يعين مهاجمًا."
+  },
+  "about.mcp": {
+    "en": "An MCP server ships with the range so an AI assistant can teach from the same plant, controls, attack paths and playbooks.",
+    "ar": "يأتي مع الميدان خادم MCP حتى يتمكن مساعد الذكاء الاصطناعي من التعليم من المصنع والضوابط ومسارات الهجوم والأدلة نفسها."
+  },
+  "about.nameTitle": {
+    "en": "The name",
+    "ar": "الاسم"
+  },
+  "about.name": {
+    "en": "Mirqab is the lookout instrument the watchman observed through from Qatar's old forts, and from the Mirqab you watch over the plant and defend it.",
+    "ar": "المرقاب هو أداة الرصد التي كان الحارس يراقب بها من حصون قطر القديمة ومن المرقاب تراقب المصنع وتدافع عنه."
+  },
+  "about.sources": {
+    "en": "Sources",
+    "ar": "المصادر"
+  },
+  "about.code": {
+    "en": "Source code",
+    "ar": "الشفرة المصدرية"
+  },
+  "footer.license": {
+    "en": "Open source under the MIT licence. The referenced standards and frameworks belong to their owners.",
+    "ar": "مفتوح المصدر بترخيص MIT وتبقى المعايير والأطر المشار إليها ملكًا لأصحابها."
+  },
+  "footer.version": {
+    "en": "Version {v}",
+    "ar": "الإصدار {v}"
+  },
+  "footer.framework": {
+    "en": "NCSA incident framework",
+    "ar": "إطار الحوادث الوطني"
+  },
+  "theme.toLight": {
+    "en": "Light",
+    "ar": "فاتح"
+  },
+  "theme.toDark": {
+    "en": "Dark",
+    "ar": "داكن"
+  },
+  "theme.label": {
+    "en": "Switch theme",
+    "ar": "تبديل السمة"
+  },
+  "range.detectedFlag": {
+    "en": "Detected",
+    "ar": "مكشوف"
+  },
+  "def.affordHint": {
+    "en": "This control would take you over budget.",
+    "ar": "هذا الضابط سيتجاوز بك الميزانية."
+  },
+  "mini.release": {
+    "en": "a release is possible",
+    "ar": "التسرب ممكن"
+  }
+}

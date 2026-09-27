@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mirqab.3li.info/sitemap.xml

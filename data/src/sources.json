@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "id": "nimf",
+      "en": "National Incident Management Framework, NCSA (State of Qatar)",
+      "ar": "الإطار الوطني لإدارة الحوادث الصادر عن الوكالة الوطنية للأمن السيبراني في دولة قطر",
+      "url": "https://ncsa.gov.qa/shared/document_library/94787172324409/33000/3118/1.0~615dba8a-196c-406c-8e42-8318ded883b3?mimetype=application/pdf",
+      "use": { "en": "The incident response phases used in every scenario playbook", "ar": "مراحل الاستجابة للحوادث المستخدمة في كل دليل سيناريو" }
+    },
+    {
+      "id": "ransomware",
+      "en": "Guidelines on Ransomware Attacks, NCSA",
+      "ar": "إرشادات مواجهة هجمات برامج الفدية الصادرة عن الوكالة الوطنية للأمن السيبراني",
+      "url": "https://ncsa.gov.qa/shared/document_library/94787172324409/33000/1959/1.0~6f9362cf-1c5c-4d0a-9146-2cf8d219ceee?mimetype=application/pdf",
+      "use": { "en": "The ransomware scenario at the operations level", "ar": "سيناريو برامج الفدية على مستوى عمليات الموقع" }
+    },
+    {
+      "id": "ddos",
+      "en": "Guidelines on Distributed Denial of Service Attacks, NCSA",
+      "ar": "إرشادات مواجهة هجمات الحرمان من الخدمة الموزعة الصادرة عن الوكالة الوطنية للأمن السيبراني",
+      "url": "https://ncsa.gov.qa/shared/document_library/94787172324409/33000/1954/1.0~fecad821-b892-4ae9-aabb-66cc9b936fef?mimetype=application/pdf",
+      "use": { "en": "Availability guidance referenced in the glossary", "ar": "إرشادات التوافر المشار إليها في المسرد" }
+    },
+    {
+      "id": "strategy",
+      "en": "National Cyber Security Strategy 2024 to 2030, NCSA",
+      "ar": "الاستراتيجية الوطنية للأمن السيبراني 2024 إلى 2030 الصادرة عن الوكالة الوطنية للأمن السيبراني",
+      "url": "https://ncsa.gov.qa/shared/document_library/94787172324409/33000/1942/1.0~76027b1f-ba43-4f85-acb0-80cd50a2030f?mimetype=application/pdf",
+      "use": { "en": "The national priority on protecting critical infrastructure", "ar": "الأولوية الوطنية لحماية البنية التحتية الحيوية" }
+    },
+    {
+      "id": "nist82",
+      "en": "NIST SP 800-82 Rev 3, Guide to Operational Technology Security",
+      "ar": "دليل تأمين التقنيات التشغيلية NIST SP 800-82 الإصدار الثالث",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r3.pdf",
+      "use": { "en": "The reference for OT architecture and the defensive controls", "ar": "المرجع لبنية التقنيات التشغيلية والضوابط الدفاعية" }
+    },
+    {
+      "id": "nist61",
+      "en": "NIST SP 800-61 Rev 3, Incident Response Recommendations and Considerations",
+      "ar": "توصيات الاستجابة للحوادث NIST SP 800-61 الإصدار الثالث",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "use": { "en": "The response lifecycle behind the playbooks", "ar": "دورة الاستجابة التي تقوم عليها الأدلة" }
+    },
+    {
+      "id": "iec62443",
+      "en": "ISA/IEC 62443 series of standards for industrial automation and control systems security",
+      "ar": "سلسلة معايير ISA/IEC 62443 لأمن أنظمة الأتمتة والتحكم الصناعية",
+      "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards",
+      "use": { "en": "Zones and conduits and the seven foundational requirements", "ar": "المناطق والقنوات والمتطلبات الأساسية السبعة" }
+    },
+    {
+      "id": "attackics",
+      "en": "MITRE ATT&CK for ICS",
+      "ar": "إطار MITRE ATT&CK للأنظمة الصناعية",
+      "url": "https://attack.mitre.org/matrices/ics/",
+      "use": { "en": "The technique behind each step of every attack path", "ar": "الأسلوب وراء كل خطوة في مسارات الهجوم" }
+    }
+  ],
+  "note": {
+    "en": "Mirqab models a fictional and composite LNG plant. It is a training environment only and does not represent any real facility, its design or its data. The attack paths are inspired by publicly documented industrial incidents and carry no operational detail that could aid an attacker.",
+    "ar": "يحاكي مرقاب مصنعًا افتراضيًا مركبًا للغاز الطبيعي المسال فهو بيئة تدريب فقط ولا يمثل أي منشأة حقيقية ولا تصميمها ولا بياناتها كما أن مسارات الهجوم مستوحاة من حوادث صناعية موثقة علنًا ولا تحمل أي تفصيل تشغيلي قد يعين مهاجمًا."
+  }
+}

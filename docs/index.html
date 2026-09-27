@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
+  <title>مرقاب Mirqab</title>
+  <meta name="description" content="مرقاب ميدان سيبراني مفتوح لمصنع افتراضي للغاز الطبيعي المسال في قطر. Mirqab is an open LNG plant cyber range for defenders of industrial control systems." />
+  <link rel="canonical" href="https://mirqab.3li.info/" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="مرقاب Mirqab" />
+  <meta property="og:description" content="An open LNG plant cyber range for Qatar. Set your defenses, launch an attack and watch the safety system decide the ending." />
+  <meta property="og:url" content="https://mirqab.3li.info/" />
+  <meta property="og:image" content="https://mirqab.3li.info/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="assets/fonts.css" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main" data-t="skip">Skip to content</a>
+
+  <header class="masthead">
+    <div class="wrap">
+      <div class="mast-top">
+        <div class="brand">
+          <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" fill="none">
+            <path d="M8 44V20l4-3 4 3v-4l4-3 4 3V9l4-3 4 3v4l4-3 4 3v4l4 3v20z" fill="currentColor" opacity="0.16"/>
+            <path d="M10 44V21l3-2.2 3 2.2v-4.5l3-2.2 3 2.2V11l3-2.2 3 2.2v5l3-2.2 3 2.2V21l3 2.2V44" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <circle cx="24" cy="30" r="3.4" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M24 24.4v-3M24 39v-3M18.6 30h-3M32.4 30h-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <span class="brand-names">
+            <span class="brand-ar">مرقاب</span>
+            <span class="brand-en">Mirqab</span>
+          </span>
+        </div>
+        <div class="mast-tools">
+          <button class="btn-ghost" id="theme-toggle" type="button" aria-label="Switch theme">
+            <svg id="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19" stroke-linecap="round"/></svg>
+            <span id="theme-label">Dark</span>
+          </button>
+          <button class="btn-ghost" id="lang-toggle" type="button" aria-label="Switch to Arabic">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.9 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.9-3.8-9S9.5 5.6 12 3z"/></svg>
+            <span id="lang-label">English</span>
+          </button>
+        </div>
+      </div>
+      <p class="tagline" data-t="tagline">An LNG plant cyber range for Qatar</p>
+      <p class="mast-source" data-t="mast.source"></p>
+      <div class="mini" id="mini" hidden>
+        <span class="mini-dot" id="mini-dot"></span>
+        <span class="mini-label" data-t="mini.posture">Posture</span>
+        <span class="mini-value" id="mini-value"></span>
+        <span class="mini-extra" id="mini-extra" hidden></span>
+      </div>
+    </div>
+    <div class="crenellation" aria-hidden="true"></div>
+  </header>
+
+  <nav class="tabs" aria-label="Sections" id="tabs-nav">
+    <div class="wrap">
+      <div class="tablist" role="tablist" id="tablist"></div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <div class="wrap">
+      <div id="boot" class="boot">...</div>
+      <noscript>
+        <div class="noscript">
+          <strong>مرقاب</strong> يحتاج إلى تفعيل جافاسكربت لعرض الميدان الحي.
+          <br />
+          Mirqab needs JavaScript enabled to run the live range.
+        </div>
+      </noscript>
+      <div id="panels" hidden></div>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <span data-t="footer.license"></span>
+      <span>
+        <a id="foot-code" href="https://github.com/SiteQ8/Mirqab" data-t="about.code">Source code</a>
+        <span class="dot"> &middot; </span>
+        <a id="foot-fw" href="#" target="_blank" rel="noopener" data-t="footer.framework">NCSA incident framework</a>
+        <span class="dot"> &middot; </span>
+        <span id="foot-ver"></span>
+      </span>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

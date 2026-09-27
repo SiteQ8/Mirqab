@@ -1,0 +1,21 @@
+{
+  "name": "mirqab",
+  "version": "1.0.0",
+  "description": "Mirqab is an open source LNG plant cyber range for Qatar, with a live process simulation, defensive controls mapped to IEC 62443, MITRE ATT&CK for ICS attack paths and NCSA incident playbooks, plus an MCP server.",
+  "type": "module",
+  "bin": { "mirqab": "mcp/server.mjs" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test",
+    "preflight": "node scripts/preflight.mjs",
+    "mcp": "node mcp/server.mjs",
+    "start": "node mcp/server.mjs"
+  },
+  "files": ["docs/", "mcp/", "scripts/", "LICENSE", "README.md", "NOTICE.md"],
+  "engines": { "node": ">=18" },
+  "license": "MIT",
+  "author": "Ali AlEnezi",
+  "homepage": "https://mirqab.3li.info/",
+  "repository": { "type": "git", "url": "https://github.com/SiteQ8/Mirqab.git" },
+  "keywords": ["ics", "ot", "cyber-range", "iec-62443", "mitre-attack", "lng", "qatar", "ncsa", "mcp"]
+}

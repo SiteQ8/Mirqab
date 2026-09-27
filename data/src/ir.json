@@ -1,0 +1,11 @@
+{
+  "phases": [
+    { "id": "prepare", "en": "Prepare", "ar": "الاستعداد", "desc": { "en": "Have the people, the plan and the tools ready before an incident.", "ar": "جهّز الأشخاص والخطة والأدوات قبل وقوع الحادث." } },
+    { "id": "detect", "en": "Detect and report", "ar": "الكشف والإبلاغ", "desc": { "en": "See the incident, record it and report a critical incident to the national agency within two hours.", "ar": "اكشف الحادث وسجّله وأبلغ الوكالة الوطنية بالحادث الحرج خلال ساعتين." } },
+    { "id": "assess", "en": "Assess and triage", "ar": "التقييم والفرز", "desc": { "en": "Judge the reach and the severity and set the priority.", "ar": "قدّر مدى الحادث وشدته وحدد الأولوية." } },
+    { "id": "contain", "en": "Contain", "ar": "الاحتواء", "desc": { "en": "Stop the incident spreading and protect the process and the safety system.", "ar": "امنع انتشار الحادث واحمِ العملية ونظام السلامة." } },
+    { "id": "eradicate", "en": "Eradicate", "ar": "الاستئصال", "desc": { "en": "Remove the attacker and the cause from every affected system.", "ar": "أزل المهاجم والسبب من كل نظام متأثر." } },
+    { "id": "recover", "en": "Recover", "ar": "التعافي", "desc": { "en": "Restore clean systems and return the plant to a safe normal.", "ar": "استعد الأنظمة النظيفة وأعد المصنع إلى وضع طبيعي آمن." } },
+    { "id": "postincident", "en": "After the incident", "ar": "ما بعد الحادث", "desc": { "en": "Learn from the incident and close the gaps it revealed.", "ar": "تعلّم من الحادث وأغلق الثغرات التي كشفها." } }
+  ]
+}

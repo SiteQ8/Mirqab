@@ -1,0 +1,97 @@
+{
+  "purdue": [
+    {
+      "id": "L4",
+      "en": "Enterprise network",
+      "ar": "شبكة المؤسسة",
+      "range": "Level 4",
+      "desc": {
+        "en": "Business systems, email and internet access, kept apart from the plant network.",
+        "ar": "أنظمة الأعمال والبريد والوصول إلى الإنترنت وتبقى معزولة عن شبكة المصنع."
+      },
+      "assets": [
+        { "en": "Business applications", "ar": "تطبيقات الأعمال" },
+        { "en": "Corporate email", "ar": "البريد المؤسسي" }
+      ]
+    },
+    {
+      "id": "L35",
+      "en": "Industrial demilitarized zone",
+      "ar": "المنطقة الصناعية منزوعة السلاح",
+      "range": "Level 3.5",
+      "desc": {
+        "en": "A broker layer where any traffic between the enterprise and the plant must stop and be inspected.",
+        "ar": "طبقة وسيطة يجب أن تتوقف عندها أي حركة بين المؤسسة والمصنع وأن تُفحص."
+      },
+      "assets": [
+        { "en": "Remote access gateway", "ar": "بوابة الوصول عن بُعد" },
+        { "en": "Data broker and patch relay", "ar": "وسيط البيانات ومرحّل التحديثات" }
+      ]
+    },
+    {
+      "id": "L3",
+      "en": "Site operations",
+      "ar": "عمليات الموقع",
+      "range": "Level 3",
+      "desc": {
+        "en": "Plant wide servers that keep history, engineering and scheduling for the site.",
+        "ar": "خوادم على مستوى المصنع تحفظ السجل والهندسة والجدولة للموقع."
+      },
+      "assets": [
+        { "en": "Data historian", "ar": "مؤرّخ البيانات" },
+        { "en": "Engineering workstation", "ar": "محطة العمل الهندسية" }
+      ]
+    },
+    {
+      "id": "L2",
+      "en": "Supervisory control",
+      "ar": "الإشراف والتحكم",
+      "range": "Level 2",
+      "desc": {
+        "en": "The operator consoles and the supervisory control that give the board its live view of the plant.",
+        "ar": "شاشات المشغّل ونظام الإشراف والتحكم التي تمنح غرفة التحكم رؤيتها الحية للمصنع."
+      },
+      "assets": [
+        { "en": "Operator consoles", "ar": "شاشات المشغّل" },
+        { "en": "Supervisory control server", "ar": "خادم الإشراف والتحكم" }
+      ]
+    },
+    {
+      "id": "L1",
+      "en": "Local control",
+      "ar": "التحكم المحلي",
+      "range": "Level 1",
+      "desc": {
+        "en": "The controllers and the safety system that run the process directly, and the safety system belongs in a zone of its own.",
+        "ar": "أجهزة التحكم ونظام السلامة التي تشغّل العملية مباشرة ويجب أن يكون نظام السلامة في منطقة خاصة به."
+      },
+      "assets": [
+        { "en": "Process controllers", "ar": "أجهزة تحكم العملية" },
+        { "en": "Safety system controller", "ar": "متحكم نظام السلامة" }
+      ]
+    },
+    {
+      "id": "L0",
+      "en": "Field devices",
+      "ar": "الأجهزة الميدانية",
+      "range": "Level 0",
+      "desc": {
+        "en": "The sensors and valves in the field that measure the process and move it.",
+        "ar": "المجسات والصمامات في الميدان التي تقيس العملية وتحركها."
+      },
+      "assets": [
+        { "en": "Sensors and transmitters", "ar": "المجسات وأجهزة الإرسال" },
+        { "en": "Valves and actuators", "ar": "الصمامات والمشغّلات" }
+      ]
+    }
+  ],
+  "foundational": [
+    { "id": "FR1", "en": "Identification and authentication control", "ar": "ضبط الهوية والمصادقة" },
+    { "id": "FR2", "en": "Use control", "ar": "ضبط الاستخدام" },
+    { "id": "FR3", "en": "System integrity", "ar": "سلامة النظام" },
+    { "id": "FR4", "en": "Data confidentiality", "ar": "سرية البيانات" },
+    { "id": "FR5", "en": "Restricted data flow", "ar": "تقييد تدفق البيانات" },
+    { "id": "FR6", "en": "Timely response to events", "ar": "الاستجابة للأحداث في وقتها" },
+    { "id": "FR7", "en": "Resource availability", "ar": "توافر الموارد" }
+  ]
+}

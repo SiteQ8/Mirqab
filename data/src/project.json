@@ -1,0 +1,13 @@
+{
+  "schema": "mirqab/1",
+  "name_en": "Mirqab",
+  "name_ar": "مرقاب",
+  "repo": "Mirqab",
+  "slug": "mirqab",
+  "domain": "mirqab.3li.info",
+  "owner": "SiteQ8",
+  "author": "Ali AlEnezi",
+  "version": "1.0.0",
+  "tagline_en": "An LNG plant cyber range for Qatar",
+  "tagline_ar": "ميدان سيبراني لمصنع الغاز الطبيعي المسال في قطر"
+}

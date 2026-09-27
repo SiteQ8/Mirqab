@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Mirqab">
+  <rect width="48" height="48" rx="11" fill="#8a1538"/>
+  <g fill="none" stroke="#d8b24e" stroke-width="2" stroke-linejoin="round">
+    <path d="M12 40V22l3-2.2 3 2.2v-4.3l3-2.2 3 2.2V11l3-2.2 3 2.2v4.7l3-2.2 3 2.2V22l3 2.2V40"/>
+    <circle cx="24" cy="29" r="3.4"/>
+    <path d="M24 23.6v-2.4M24 37v-2.4M18.6 29h-2.4M31.8 29h-2.4" stroke-linecap="round"/>
+  </g>
+</svg>
